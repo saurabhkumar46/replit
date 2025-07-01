@@ -1,0 +1,7 @@
+{
+  "id": "123",
+  "user": "alice",
+  "timestamp": "2024-07-01T09:00:00Z",
+  "reading": 42.1,
+  "type": "temperature"
+}
