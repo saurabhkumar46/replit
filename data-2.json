@@ -1,0 +1,7 @@
+{
+  "uid": 123,
+  "username": "alice",
+  "time_ms": 1721840400000,
+  "value": 42.1,
+  "sensor": "temperature"
+}
