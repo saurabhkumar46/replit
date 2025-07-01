@@ -1,0 +1,7 @@
+{
+  "id": 123,
+  "user": "alice",
+  "timestamp_ms": 1721840400000,
+  "value": 42.1,
+  "sensor_type": "temperature"
+}
