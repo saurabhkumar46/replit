@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #6c5ce7;
+    --secondary-color: #a29bfe;
+    --accent-color: #dfe6e9;
+    --text-color: #2d3436;
+    --background-color-light: #ffffff;
+    --background-color-dark: #2c3e50;
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color-light);
+    transition: background-color 0.3s ease;
+}
+
+dark-theme {
+    background-color: var(--background-color-dark);
+    color: var(--accent-color);
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+a {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+gradient-bg {
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.skill-bar {
+    background: #dfe6e9;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-bar-fill {
+    background: var(--primary-color);
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+.glass-effect {
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    /* Mobile styles */
+}
+
+/* Mobile Hamburger Menu Styles */
+.hamburger {
+    cursor: pointer;
+}
+
+/* Form Styling */
+input, textarea {
+    border-radius: var(--border-radius);
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    width: 100%;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+/* Social Media Icon Animations */
+.social-icon {
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
